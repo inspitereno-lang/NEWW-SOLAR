@@ -20,6 +20,7 @@ const Hero = () => {
           </div>
           <h1 className="text-6xl md:text-8xl font-headline font-light text-white leading-[1.05] tracking-tighter">
             Precision <br />
+            <span className="font-extrabold text-transparent bg-clip-text gold-gradient">Sustainability</span>
           </h1>
           <p className="text-lg md:text-xl text-white/70 max-w-xl leading-relaxed font-light tracking-wide">
             Refining the Kerala energy landscape through sophisticated solar integration. We don't just install panels; we design ecosystems for the modern visionary home.
