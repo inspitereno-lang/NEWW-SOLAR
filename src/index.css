@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #003527;
+  --color-on-primary: #ffffff;
+  --color-secondary: #C5A059;
+  --color-accent-gold: #E5C17B;
+  --color-background: #ffffff;
+  --color-surface: #FDFDFD;
+  --color-surface-variant: #F4F7F6;
+  --color-on-background: #001a13;
+  --color-primary-container: #004d39;
+  --color-outline: #D1D5D4;
+  --color-outline-variant: #E8EAE9;
+
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  --radius-default: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2.5rem;
+
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-widest: 0.2em;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(0, 53, 39, 0.03);
+  }
+  .editorial-shadow {
+    box-shadow: 0 30px 60px -12px rgba(0, 53, 39, 0.08), 0 18px 36px -18px rgba(0, 53, 39, 0.1);
+  }
+  .gold-gradient {
+    background: linear-gradient(135deg, #C5A059 0%, #F1D59F 50%, #C5A059 100%);
+  }
+  .hero-gradient {
+    background: linear-gradient(to right, rgba(0, 53, 39, 0.95) 0%, rgba(0, 53, 39, 0.4) 60%, rgba(0, 53, 39, 0) 100%);
+  }
+  .emerald-glow {
+    filter: drop-shadow(0 0 12px rgba(197, 160, 89, 0.3));
+  }
+}
+
+::selection {
+  background-color: #C5A059;
+  color: white;
+}
